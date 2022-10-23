@@ -1,11 +1,11 @@
-Feature: Verify upload csv with some rows contain invalid fields will show the unsuccessful message
+Feature: Verify clicking the List All button, the system can list all the workingclass heroes
 
   Background: To launch the browser
-    Given Launch the browser and login clerk account
+    Given Launch the browser and login gov account
 
   @regression
-  Scenario: Verify upload csv with some rows contain invalid fields will show the unsuccessful message
-    Given Csv file with one row contains incorrect data
-    Then Upload via the csv uploading page and verify the unsuccessful result
-    And Verify the new created correct hero from the working class heroes table record
+  Scenario: Verify clicking the List All button, the system can list all the workingclass heroes
+    Given Gov user open the Governor Dashboard page
+    Then Click on the List All button
+    And Verify the List data matches the database
     And Close the browser

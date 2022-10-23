@@ -2,16 +2,6 @@ package module;
 
 public class WorkingClassHero {
 
-    //natid,name,gender,birthDate,deathDate,salary,taxPaid,browniePoints
-    public final static String COL_NAME_NATID = "natid";
-    public final static String COL_NAME_NAME = "name";
-    public final static String COL_NAME_GENDER = "gender";
-    public final static String COL_NAME_BIRTH_DATE = "birthDate";
-    public final static String COL_NAME_DEATH_DATE = "deathDate";
-    public final static String COL_NAME_SALARY = "salary";
-    public final static String COL_NAME_TAX_PAID = "taxPaid";
-    public final static String COL_NAME_BROWNIE_POINTS = "browniePoints";
-
     private String natid;
     private String name;
     private String gender;
@@ -20,6 +10,10 @@ public class WorkingClassHero {
     private String browniePoints;
     private String salary;
     private String taxPaid;
+
+    public WorkingClassHero() {
+
+    }
 
     public WorkingClassHero(String natid, String name, String gender, String birthDate,
                             String deathDate, String browniePoints, String salary, String taxPaid) {
